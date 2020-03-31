@@ -89,6 +89,6 @@ app.get('/:urlToFwd',(req,res,next)=>{
 
 });
 
-var listener = app.listen(3000 || process.env.PORT, function () {
+var listener = app.listen(process.env.PORT || 3000, function () {
     console.log("Your app is listening on port " + listener.address().port);
 });
